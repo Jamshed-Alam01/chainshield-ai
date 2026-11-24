@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Local DB, backups, archives
+*.db
+*.sqlite3
+*.zip
+*.backup
+*.backup-*
+
+# Datasets (keep only the small demo sample)
+*.csv
+!backend/data/sample/*.csv
+backend/data/imports/
+
+# Outputs / logs / IDE / OS
+analysis-result.json
+*.log
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
