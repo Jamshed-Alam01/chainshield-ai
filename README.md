@@ -188,6 +188,21 @@ Runs on http://localhost:5173 and proxies `/api` to the backend on port 8000.
 
 ---
 
+## Results
+
+Random Forest (100 trees, max depth 10, balanced class weights) trained on the **Elliptic Bitcoin Dataset** with a stratified 80/20 random train/test split.
+
+| Metric (illicit class) | Score |
+|---|---|
+| Accuracy | 98.7% |
+| Precision | 94.5% |
+| Recall | 92.0% |
+| F1 | 93.2% |
+
+Note: this is a random split. Elliptic is a time-ordered dataset, and a time-based split is the stricter benchmark, where scores are typically lower. Treat these numbers as indicative, not production performance.
+
+---
+
 ## Limitations
 
 - Free-tier backend sleeps after 15 minutes idle (first request about 50 s)
